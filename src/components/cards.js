@@ -1,6 +1,6 @@
-import Link from 'next/link';
+import Link from "next/link";
 
-import styles from '@/styles/app.module.css';
+import styles from "@/styles/app.module.css";
 
 export const Cards = () => {
   return (
@@ -8,7 +8,7 @@ export const Cards = () => {
       <Link
         href="https://docs.near.org/build/web3-apps/quickstart"
         className={styles.card}
-        target='_blank'
+        target="_blank"
         rel="noopener noreferrer"
       >
         <h2>
@@ -26,6 +26,17 @@ export const Cards = () => {
           Near Integration <span>-&gt;</span>
         </h2>
         <p>Discover how simple it is to interact with a Near smart contract.</p>
+      </Link>
+
+      <Link
+        href="/hello-gemini"
+        className={styles.card}
+        rel="noopener noreferrer"
+      >
+        <h2>
+          Gemini Integration  <span>-&gt;</span>
+        </h2>
+        <p>Learn how to use the Gemini API and interact with it.</p>
       </Link>
     </div>
   );
